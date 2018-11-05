@@ -1,6 +1,6 @@
 {
   "name": "yalf",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Yet Another (JavaScript) Logging Framework.",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
