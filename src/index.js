@@ -362,7 +362,7 @@ class Client {
       logEventMessage = msg;
     }
 
-    const logEventMeta = Object.assign({}, meta, logEventErrorMeta, this.meta);
+    const logEventMeta = Object.assign({}, this.meta, meta, logEventErrorMeta);
     const logEventTags = ['log', level.toString()].concat(this.tags);
 
     const logEvent = new LogEvent(
