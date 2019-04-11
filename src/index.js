@@ -568,7 +568,7 @@ export class Logger extends EventEmitter {
    * @param  {string[]} tags The tags to add to every log event.
    */
   hijackConsole(meta = {}, tags = []) {
-    const client = this.client(meta, tags);
+    const client = this.client(meta, ...tags);
     console.log = client.debug.bind(client);
     console.debug = client.debug.bind(client);
     console.info = client.info.bind(client);
